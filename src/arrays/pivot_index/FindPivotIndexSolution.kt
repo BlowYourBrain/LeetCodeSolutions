@@ -2,7 +2,18 @@ package arrays.pivot_index
 
 private const val UNKNOWN_INDEX = -1
 
-class FindPivotIndexSolution {
+
+fun main(args: Array<String>) {
+
+    val testArray = arrayOf(-1, -1, 0, 1, 1, 0).toIntArray()
+
+    val solution = FindPivotIndexSolution()
+
+    println("pivot index = ${solution.pivotIndex(testArray)}")
+
+}
+
+private class FindPivotIndexSolution {
 
     fun pivotIndex(nums: IntArray): Int = nums.findPivotIndex()
 
