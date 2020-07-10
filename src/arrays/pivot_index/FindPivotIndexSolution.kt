@@ -2,7 +2,7 @@ package arrays.pivot_index
 
 private const val UNKNOWN_INDEX = -1
 
-internal class Solution {
+class FindPivotIndexSolution {
 
     fun pivotIndex(nums: IntArray): Int = nums.findPivotIndex()
 
