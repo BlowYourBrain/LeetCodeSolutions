@@ -1,5 +1,7 @@
 package company_interview_questions.two_sums
 
+//https://leetcode.com/problems/two-sum/
+
 fun main(args: Array<String>) {
 
     Solution()
