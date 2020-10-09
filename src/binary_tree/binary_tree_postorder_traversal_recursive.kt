@@ -1,8 +1,8 @@
 package binary_tree
 
-class InOrderRecursiveSolution {
+class PostOrderRecursiveSolution {
 
-    fun inorderTraversal(root: TreeNode?): List<Int> {
+    fun postorderTraversal(root: TreeNode?): List<Int> {
         if (root == null) {
             return emptyList()
         }
@@ -14,14 +14,14 @@ class InOrderRecursiveSolution {
 
     fun TreeNode.getLeft(list: MutableList<Int>) {
         left?.getLeft(list)
-        list.add(`val`)
         right?.getRight(list)
+        list.add(`val`)
     }
 
     fun TreeNode.getRight(list: MutableList<Int>) {
         left?.getLeft(list)
-        list.add(`val`)
         right?.getRight(list)
+        list.add(`val`)
     }
 
 }
