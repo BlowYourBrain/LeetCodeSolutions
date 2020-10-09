@@ -1,6 +1,6 @@
 package binary_tree
 
-class RecursiveSolution {
+class InOrderRecursiveSolution {
 
     fun preorderTraversal(root: TreeNode?): List<Int> {
         if (root == null) {
@@ -13,14 +13,14 @@ class RecursiveSolution {
     }
 
     fun TreeNode.getLeft(list: MutableList<Int>) {
-        list.add(`val`)
         left?.getLeft(list)
+        list.add(`val`)
         right?.getRight(list)
     }
 
     fun TreeNode.getRight(list: MutableList<Int>) {
-        list.add(`val`)
         left?.getLeft(list)
+        list.add(`val`)
         right?.getRight(list)
     }
 
