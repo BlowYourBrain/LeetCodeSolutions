@@ -73,6 +73,7 @@ fun <T> T.printlnResult(text: String? = null): T {
     return this
 }
 
+//region Not working.
 fun TreeNode.printTree() {
     val maxDepth = MaxDepthSolution().maxDepth(this)
     var maxNumber = 40
@@ -93,3 +94,4 @@ private fun printPosition(depth: Int, lineDividersCount: Int): Int {
     val printPosition = depth * 2 + dividers
     return printPosition
 }
+//endregion
