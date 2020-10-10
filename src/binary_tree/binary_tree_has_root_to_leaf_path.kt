@@ -26,8 +26,18 @@ class HasRootToLeafPathSolution {
             return actualSum + node.`val` == expextedSum
         }
 
-        node.left?.let { return findLeaf(it, actualSum + node.`val`, expextedSum) }
-        node.right?.let { return findLeaf(it, actualSum + node.`val`, expextedSum) }
+        node.left?.let {
+            val result = findLeaf(it, actualSum + node.`val`, expextedSum)
+            if (result) {
+                return result
+            }
+        }
+        node.right?.let {
+            val result = findLeaf(it, actualSum + node.`val`, expextedSum)
+            if (result) {
+                return result
+            }
+        }
 
         return false
     }
