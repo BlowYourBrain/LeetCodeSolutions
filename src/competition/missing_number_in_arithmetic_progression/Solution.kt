@@ -2,6 +2,8 @@ package competition.missing_number_in_arithmetic_progression
 
 import kotlin.test.assertEquals
 
+//https://leetcode.com/problems/missing-number-in-arithmetic-progression/solution/
+
 fun main(){
     val solution = Solution()
 
