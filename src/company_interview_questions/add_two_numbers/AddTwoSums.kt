@@ -48,7 +48,7 @@ fun printListNode(listNode: ListNode) {
 }
 
 
-class ListNode(var `val`: Int) {
+data class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
